@@ -14,7 +14,7 @@
     "react-native-utils",
     "react-native-tools"
   ],
-  "author": "supervons",
+  "author": ["supervons", "A1daxiang", "jingLj0512"],
   "license": "",
   "prettier": {
     "singleQuote": false,

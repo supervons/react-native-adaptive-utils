@@ -1,2 +1,1 @@
-
 # react-native-adaptive-utils
