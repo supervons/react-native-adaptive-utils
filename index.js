@@ -1,2 +1,3 @@
 import * as Resolution from './common/resolution'
-module.exports = {...Resolution}
+import * as Validator from './common/validator'
+module.exports = {...Resolution, ...Validator}

@@ -1,11 +1,19 @@
+/**
+ * Resolution tool
+ */
 import {
     Dimensions,
 } from "react-native";
 
-const { height, width } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 const UIPixelRatio = width / 375;
 
-export function toDips(px) {
+/**
+ * Dynamically scale the font size based on the current screen width
+ * @param px
+ * @returns {number}
+ */
+export function dynamicFontSize(px) {
     return Math.round(px * UIPixelRatio);
 }
 
