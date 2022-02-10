@@ -18,7 +18,7 @@
   "license": "",
   "prettier": {
     "singleQuote": false,
-    "semi": false,
+    "semi": true,
     "tabWidth": 2,
     "useTabs": false,
     "trailingComma": "none",

@@ -1,9 +1,7 @@
 /**
  * Resolution tool
  */
-import {
-    Dimensions,
-} from "react-native";
+import { Dimensions } from "react-native";
 
 const { width } = Dimensions.get("window");
 const UIPixelRatio = width / 375;
@@ -14,6 +12,5 @@ const UIPixelRatio = width / 375;
  * @returns {number}
  */
 export function dynamicFontSize(px) {
-    return Math.round(px * UIPixelRatio);
+  return Math.round(px * UIPixelRatio);
 }
-

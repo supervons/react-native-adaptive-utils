@@ -1,3 +1,4 @@
-import * as Resolution from './common/resolution'
-import * as Validator from './common/validator'
-module.exports = {...Resolution, ...Validator}
+import * as Helper from "./common/helper";
+import * as Validator from "./common/validator";
+import * as Resolution from "./common/resolution";
+module.exports = { ...Helper, ...Validator, ...Resolution };
