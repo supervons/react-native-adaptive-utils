@@ -14,9 +14,9 @@ It is recommended to use it directly in 'CSS' styles:
 ```javascript
 
 const styles = StyleSheet.create({
-container: {
-fontSize: dynamicFontSize(12)
-}
+  container: {
+    fontSize: dynamicFontSize(12)
+  }
 })
 ```
 
