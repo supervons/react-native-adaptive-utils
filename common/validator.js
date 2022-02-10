@@ -26,9 +26,9 @@ export function validEmail(mail) {
 
 /**
  * Valid Chinese person card.
- * @param cardno
+ * @param cardNo
  * @returns {boolean}
  */
-export function validCardno(cardno) {
-    return RegExp(/(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/).test(cardno);
+export function validCardno(cardNo) {
+    return RegExp(/(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/).test(cardNo);
 }
