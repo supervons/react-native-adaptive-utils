@@ -9,7 +9,7 @@ Dynamically get font size based on screen width
 ### sample
 ```javascript
 let fontSize = dynamicFontSize(12)
-` ` `
+```
 It is recommended to use it directly in 'CSS' styles:
 ```javascript
 
