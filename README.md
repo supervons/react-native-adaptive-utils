@@ -1,3 +1,5 @@
+English | [简体中文](./README_CN.md)
+
 # react-native-adaptive-utils
 
 # API specification
@@ -20,6 +22,6 @@ fontSize: dynamicFontSize(12)
 
 ## Valid tool
 
-# to do
-- [] Specifies the common regularization check
-- [] Network request
+# TODO-LIST
+- [ ] Specifies the common regularization check
+- [ ] Network request

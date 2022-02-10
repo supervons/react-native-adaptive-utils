@@ -1,3 +1,5 @@
+[English](./README.md) | 简体中文
+
 # react-native-adaptive-utils
 
 # API 说明
