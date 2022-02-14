@@ -29,6 +29,6 @@ export function validEmail(mail) {
  * @param cardNo
  * @returns {boolean}
  */
-export function validCardno(cardNo) {
+export function validCardNo(cardNo) {
   return RegExp(/(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/).test(cardNo);
 }
