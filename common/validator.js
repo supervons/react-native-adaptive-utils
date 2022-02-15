@@ -35,7 +35,7 @@ export function validCardNo(cardNo) {
 
 /**
  * Valid Chinese person card.
- * @param characterLimit
+ * @param val, strNum
  * @returns {boolean}
  */
 export function limitstr(val, strNum) {
@@ -54,6 +54,24 @@ export function limitstr(val, strNum) {
       re += byte;
     } else {
       return re;
+    }
+  }
+}
+
+/**
+ * Valid Chinese person card.
+ * @param target
+ * @returns {boolean}
+ */
+export function isImg(target) {
+  let file = target.value();
+  if (file == "") {
+    alert("Please upload pictures");
+    return false;
+  } else {
+    if (!/\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/.test(file)) {
+      alert("The image type must be One of the .gif,jpeg,jpg,png");
+      return false;
     }
   }
 }
