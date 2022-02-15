@@ -35,22 +35,22 @@ export function validCardNo(cardNo) {
 
 /**
  * Valid Chinese person card.
- * @param CharacterLimit
+ * @param characterLimit
  * @returns {boolean}
  */
-export function limitstr(val, strnum) {
+export function limitstr(val, strNum) {
   let re = "";
-  let strleng = val.length;
-  let byteleng = val.replace(/[^x00-xff]/g, "**").length;
-  if (byteleng <= strnum) return val;
-  for (var i = 0, bytenum = 0; i < strleng; i++) {
+  let strLeng = val.length;
+  let byteLeng = val.replace(/[^x00-xff]/g, "**").length;
+  if (byteLeng <= strNum) return val;
+  for (var i = 0, byteNum = 0; i < strLeng; i++) {
     var byte = val.charAt(i);
     if (/[\x00-\xff]/.test(byte)) {
-      bytenum += 1;
+      byteNum += 1;
     } else {
-      bytenum += 2;
+      byteNum += 2;
     }
-    if (bytenum <= strnum) {
+    if (byteNum <= strNum) {
       re += byte;
     } else {
       return re;
