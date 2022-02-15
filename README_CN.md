@@ -55,7 +55,9 @@ throttle(() => {
 上述第一次触发时执行，`500ms` 中，后续触发不执行。
 
 ### 1.3 randomString
+
 生成指定长度（默认 `32` 位）的随机字符串。
+
 #### 示例
 
 ```javascript
@@ -94,6 +96,26 @@ let checkEmailFlag = validEmail(12);
 
 ```javascript
 let checkCardNoFlag = validCardNo(12);
+```
+
+### 2.4 strLimit
+
+字符长度限制校验
+
+#### 示例
+
+```javascript
+let text = limitStr(str, length);
+```
+
+### 2.5 isImg
+
+图片类型校验
+
+#### 示例
+
+```javascript
+let isPicture = isImg(target);
 ```
 
 ## 3 分辨率
