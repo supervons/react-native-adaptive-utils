@@ -34,7 +34,7 @@ export function throttle(fn, delay = 500) {
  * @type {boolean}
  */
 export function randomString(len = 32) {
-  if (len < 32) {
+  if (typeof len != "number") {
     len = 32;
   } else if (len > 255) {
     return false;
