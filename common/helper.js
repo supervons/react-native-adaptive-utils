@@ -30,7 +30,7 @@ export function throttle(fn, delay = 500) {
   }, delay);
 }
 /**
- * Random number generation. length:32-255
+ * Random number generation.   length:32-255
  * @type {boolean}
  */
 export function randomString(len = 32) {
