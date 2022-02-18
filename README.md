@@ -130,9 +130,9 @@ const styles = StyleSheet.create({
 
 # Todo List
 
-- [ ] Get image type.
-- [ ] Determines the upper limit of input characters in the text box.
-- [ ] Generate UUID.
+- [x] Get image type.
+- [x] Determines the upper limit of input characters in the text box.
+- [x] Generate UUID.
 
 # Todo Prepare
 
