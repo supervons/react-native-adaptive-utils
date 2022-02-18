@@ -43,7 +43,7 @@ export function randomString(len = 32) {
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"; /****容易混淆的字符oOLl,9gq,Vv,Uu,I1可以去掉，这里暂时没去****/
   let maxPos = chars.length;
   let pwd = "";
-  for (i = 0; i < len; i++) {
+  for (let i = 0; i < len; i++) {
     pwd += chars.charAt(Math.floor(Math.random() * maxPos));
   }
   return pwd;
