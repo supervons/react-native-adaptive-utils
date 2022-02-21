@@ -1,3 +1,9 @@
+/*
+ * @Descripttion:
+ * @Author: liujing
+ * @Date: 2022-02-15 11:22:59
+ * @LastEditTime: 2022-02-21 16:50:47
+ */
 /**
  * Helper tool,Improve and optimize development efficiency.
  */
@@ -47,4 +53,21 @@ export function randomString(len = 32) {
     pwd += chars.charAt(Math.floor(Math.random() * maxPos));
   }
   return pwd;
+}
+
+/**
+ * Object array sort.
+ *  * @param arr
+ * @type {boolean}
+ */
+export function sortFun(arr, props, type) {
+  if (type == 1) {
+    return arr.sort(function (a, b) {
+      return a[props] - b[props];
+    });
+  } else if (type == 0) {
+    return arr.sort(function (a, b) {
+      return b[props] - a[props];
+    });
+  }
 }

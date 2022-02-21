@@ -66,6 +66,30 @@ let randomStr = randomString(16);
 
 上述生成 `16` 位长度的随机数。
 
+### 1.4 integerDecimalsFormat
+
+整数小数千分位显示
+
+#### 示例
+
+```javascript
+let thousandsNum = integerDecimalsFormat(-456123131.12301);
+```
+
+上述 num 以 `-456,123,131.12301`千分位格式显示
+
+### 1.5 computeSomeCharsCount
+
+统计字符串中指定字符或串出现的次数
+
+#### 示例
+
+```javascript
+let count = computeSomeCharsCount("ad", "adsfdasf");
+```
+
+上述 count 为`ad`在`adsfdasf`中出现的次数
+
 ## 2 校验工具
 
 ### 2.1 validPhone
@@ -142,9 +166,12 @@ const styles = StyleSheet.create({
 
 # 待办
 
-- [ ] 判断图片类型
-- [ ] 文本框输入字符上限判断
+- [x] 判断图片类型
+- [x] 文本框输入字符上限判断
 - [x] 生成随机数
+- [ ] 整数、小数金额千分位显示
+- [ ] 统计字符串中的指定字符或串的出现次数
+- [ ] 对象数组按指定字段排序
 
 # 待评审确定
 

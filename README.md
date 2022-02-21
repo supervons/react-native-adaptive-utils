@@ -54,6 +54,42 @@ throttle(() => {
 
 Means execute first once, then if trigger many times in 500ms, ignored.
 
+### 1.3 randomString
+
+Generates a random string of a specified length (32 bits by default).
+
+#### Demo
+
+```javascript
+let randomStr = randomString(16);
+```
+
+Above generate '16' length random number.
+
+### 1.4 integerDecimalsFormat
+
+The integer is displayed in thousands of fractions
+
+#### Demo
+
+```javascript
+let thousandsNum = integerDecimalsFormat(-456123131.12301);
+```
+
+The above num format is' -456,123,131.12301 '
+
+### 1.5 computeSomeCharsCount
+
+Counts the number of occurrences of a specified character or string in a string
+
+#### Demo
+
+```javascript
+let count = computeSomeCharsCount("ad", "adsfdasf");
+```
+
+The count above is the number of occurrences of 'AD' in 'adsfdasf'
+
 ## 2 validator
 
 ### 2.1 validPhone
@@ -130,9 +166,9 @@ const styles = StyleSheet.create({
 
 # Todo List
 
-- [ ] Get image type.
-- [ ] Determines the upper limit of input characters in the text box.
-- [ ] Generate UUID.
+- [x] Get image type.
+- [x] Determines the upper limit of input characters in the text box.
+- [x] Generate UUID.
 
 # Todo Prepare
 
