@@ -48,3 +48,49 @@ export function randomString(len = 32) {
   }
   return pwd;
 }
+/**
+ * integer decimals thousands format show
+ * @type {boolean}
+ */
+export function integerDecimalsFormat(num) {
+  if (typeof num === "number") {
+    num = num + "";
+    if (/^.*\..*$/.test(num)) {
+      let pointIndex = num.lastIndexOf(".");
+      let intPart = num.substring(0, pointIndex);
+      let pointPart = num.substring(pointIndex + 1, num.length);
+      intPart = intPart + "";
+      var re = /(-?\d+)(\d{3})/;
+      while (re.test(intPart)) {
+        intPart = intPart.replace(re, "$1,$2");
+      }
+      num = intPart + "." + pointPart;
+    } else {
+      num = num + "";
+      var re = /(-?\d+)(\d{3})/;
+      while (re.test(num)) {
+        num = num.replace(re, "$1,$2");
+      }
+    }
+    return num;
+  } else {
+    return false;
+  }
+}
+/**
+ * Count the number of occurrences of a string
+ * @type {boolean}
+ */
+export function computeSomeCharsCount(partStr, fullStr) {
+  if (typeof partStr == "string" && typeof fullStr == "string") {
+    let index = fullStr.indexOf(partStr); // 字符出现的位置
+    let num = 0; // 这个字符出现的次数
+    while (index !== -1) {
+      num++; // 每出现一次 次数加一
+      index = fullStr.indexOf(partStr, index + 1); // 从字符串出现的位置的下一位置开始继续查找
+    }
+    return num;
+  } else {
+    return false;
+  }
+}
