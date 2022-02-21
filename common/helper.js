@@ -2,7 +2,7 @@
  * @Descripttion:
  * @Author: liujing
  * @Date: 2022-02-15 11:22:59
- * @LastEditTime: 2022-02-21 16:50:47
+ * @LastEditTime: 2022-02-21 16:52:09
  */
 /**
  * Helper tool,Improve and optimize development efficiency.
@@ -49,7 +49,7 @@ export function randomString(len = 32) {
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"; /****容易混淆的字符oOLl,9gq,Vv,Uu,I1可以去掉，这里暂时没去****/
   let maxPos = chars.length;
   let pwd = "";
-  for (i = 0; i < len; i++) {
+  for (let i = 0; i < len; i++) {
     pwd += chars.charAt(Math.floor(Math.random() * maxPos));
   }
   return pwd;
@@ -69,5 +69,49 @@ export function sortFun(arr, props, type) {
     return arr.sort(function (a, b) {
       return b[props] - a[props];
     });
+/**
+ * integer decimals thousands format show
+ * @type {boolean}
+ */
+export function integerDecimalsFormat(num) {
+  if (typeof num === "number") {
+    num = num + "";
+    if (/^.*\..*$/.test(num)) {
+      let pointIndex = num.lastIndexOf(".");
+      let intPart = num.substring(0, pointIndex);
+      let pointPart = num.substring(pointIndex + 1, num.length);
+      intPart = intPart + "";
+      var re = /(-?\d+)(\d{3})/;
+      while (re.test(intPart)) {
+        intPart = intPart.replace(re, "$1,$2");
+      }
+      num = intPart + "." + pointPart;
+    } else {
+      num = num + "";
+      var re = /(-?\d+)(\d{3})/;
+      while (re.test(num)) {
+        num = num.replace(re, "$1,$2");
+      }
+    }
+    return num;
+  } else {
+    return false;
+  }
+}
+/**
+ * Count the number of occurrences of a string
+ * @type {boolean}
+ */
+export function computeSomeCharsCount(partStr, fullStr) {
+  if (typeof partStr == "string" && typeof fullStr == "string") {
+    let index = fullStr.indexOf(partStr); // 字符出现的位置
+    let num = 0; // 这个字符出现的次数
+    while (index !== -1) {
+      num++; // 每出现一次 次数加一
+      index = fullStr.indexOf(partStr, index + 1); // 从字符串出现的位置的下一位置开始继续查找
+    }
+    return num;
+  } else {
+    return false;
   }
 }
