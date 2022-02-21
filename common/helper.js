@@ -2,7 +2,7 @@
  * @Descripttion:
  * @Author: liujing
  * @Date: 2022-02-15 11:22:59
- * @LastEditTime: 2022-02-21 16:52:09
+ * @LastEditTime: 2022-02-21 16:53:47
  */
 /**
  * Helper tool,Improve and optimize development efficiency.
@@ -69,6 +69,8 @@ export function sortFun(arr, props, type) {
     return arr.sort(function (a, b) {
       return b[props] - a[props];
     });
+  }
+}
 /**
  * integer decimals thousands format show
  * @type {boolean}
