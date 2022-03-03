@@ -83,14 +83,14 @@ export function integerDecimalsFormat(num) {
       let intPart = num.substring(0, pointIndex);
       let pointPart = num.substring(pointIndex + 1, num.length);
       intPart = intPart + "";
-      var re = /(-?\d+)(\d{3})/;
+      let re = /(-?\d+)(\d{3})/;
       while (re.test(intPart)) {
         intPart = intPart.replace(re, "$1,$2");
       }
       num = intPart + "." + pointPart;
     } else {
       num = num + "";
-      var re = /(-?\d+)(\d{3})/;
+      let re = /(-?\d+)(\d{3})/;
       while (re.test(num)) {
         num = num.replace(re, "$1,$2");
       }
