@@ -66,13 +66,9 @@ export function limitStr(val, strNum) {
  */
 export function isImg(target) {
   let file = target.value();
-  if (file == "") {
-    alert("Please upload pictures");
+  if (file === "") {
     return false;
   } else {
-    if (!/\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/.test(file)) {
-      alert("The image type must be One of the .gif,jpeg,jpg,png");
-      return false;
-    }
+    return /\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/.test(file);
   }
 }

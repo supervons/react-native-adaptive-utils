@@ -1,3 +1,9 @@
+/*
+ * @Descripttion:
+ * @Author: liujing
+ * @Date: 2022-02-15 11:22:59
+ * @LastEditTime: 2022-02-21 16:53:47
+ */
 /**
  * Helper tool,Improve and optimize development efficiency.
  */
@@ -48,6 +54,23 @@ export function randomString(len = 32) {
   }
   return pwd;
 }
+
+/**
+ * Object array sort.
+ *  * @param arr
+ * @type {boolean}
+ */
+export function sortFun(arr, props, type) {
+  if (type == 1) {
+    return arr.sort(function (a, b) {
+      return a[props] - b[props];
+    });
+  } else if (type == 0) {
+    return arr.sort(function (a, b) {
+      return b[props] - a[props];
+    });
+  }
+}
 /**
  * integer decimals thousands format show
  * @type {boolean}
@@ -60,14 +83,14 @@ export function integerDecimalsFormat(num) {
       let intPart = num.substring(0, pointIndex);
       let pointPart = num.substring(pointIndex + 1, num.length);
       intPart = intPart + "";
-      var re = /(-?\d+)(\d{3})/;
+      let re = /(-?\d+)(\d{3})/;
       while (re.test(intPart)) {
         intPart = intPart.replace(re, "$1,$2");
       }
       num = intPart + "." + pointPart;
     } else {
       num = num + "";
-      var re = /(-?\d+)(\d{3})/;
+      let re = /(-?\d+)(\d{3})/;
       while (re.test(num)) {
         num = num.replace(re, "$1,$2");
       }
