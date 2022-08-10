@@ -33,16 +33,22 @@ export function isIphoneX() {
  * @param px
  * @returns {number}
  */
-export function getTitleBarHeight(px) {
+export function getTitleBarHeight() {
+  let dimen = Dimensions.get("window");
+  let isIphoneX =
+    Platform.OS === "ios" &&
+    !Platform.isPad &&
+    !Platform.isTVOS &&
+    (dimen.height === 812 || dimen.width === 812);
   let statusBarHeight = 0;
   if (Platform.OS == "android") {
     statusBarHeight = StatusBar.currentHeight;
-  } else if (isIphoneX()) {
+  } else if (isIphoneX) {
     statusBarHeight = 44;
   } else {
     statusBarHeight = 20;
   }
-  const unitWidth = Dimensions.get("window").width / 750;
+  const unitWidth = dimen.width / 750;
   const titleHeight = unitWidth * 100 + statusBarHeight;
   return titleHeight;
 }
