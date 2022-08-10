@@ -148,6 +148,14 @@ let isPicture = isImg(target);
 
 根据屏幕宽度，动态获取字体大小
 
+### 3.2 isIphoneX
+
+判断是否是 iphonex
+
+### 3.3 getTitleBarHeight
+
+获取基于当前屏幕的标题栏高度
+
 #### 示例
 
 ```javascript

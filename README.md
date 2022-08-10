@@ -148,6 +148,14 @@ let isPicture = isImg(target);
 
 Get font size base on width.
 
+### 3.2 isIphoneX
+
+Check whether it is iphonex
+
+### 3.3 getTitleBarHeight
+
+Gets the title bar height based on the current screen.
+
 #### Demo
 
 ```javascript
