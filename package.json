@@ -1,6 +1,6 @@
 {
   "name": "react-native-adaptive-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React-Native adaptive utils, contains various adaptation function.\n",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,11 @@
     "react-native-utils",
     "react-native-tools"
   ],
-  "author": ["supervons", "A1daxiang", "jingLj0512"],
+  "author": [
+    "supervons",
+    "A1daxiang",
+    "jingLj0512"
+  ],
   "license": "",
   "prettier": {
     "singleQuote": false,
