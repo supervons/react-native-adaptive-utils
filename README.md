@@ -148,14 +148,6 @@ let isPicture = isImg(target);
 
 Get font size base on width.
 
-### 3.2 isIphoneX
-
-Check whether it is iphonex
-
-### 3.3 getTitleBarHeight
-
-Gets the title bar height based on the current screen.
-
 #### Demo
 
 ```javascript
@@ -168,6 +160,42 @@ Suggest Usage：
 const styles = StyleSheet.create({
   container: {
     fontSize: dynamicFontSize(12)
+  }
+});
+```
+
+### 3.2 isIphoneX
+
+Check whether it is iphonex
+
+#### Demo
+
+```javascript
+isIphoneX() ? "..." : "...";
+```
+
+```javascript
+const styles = StyleSheet.create({
+  container: {
+    height: isIphoneX() ? 15 : 20;
+  }
+});
+### 3.3 getTitleBarHeight
+
+Gets the title bar height based on the current screen.
+
+#### Demo
+
+```
+
+```javascript
+let height = getTitleBarHeight();
+```
+
+```javascript
+const styles = StyleSheet.create({
+  container: {
+    height: getTitleBarHeight();
   }
 });
 ```
