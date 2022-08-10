@@ -148,14 +148,6 @@ let isPicture = isImg(target);
 
 根据屏幕宽度，动态获取字体大小
 
-### 3.2 isIphoneX
-
-判断是否是 iphonex
-
-### 3.3 getTitleBarHeight
-
-获取基于当前屏幕的标题栏高度
-
 #### 示例
 
 ```javascript
@@ -168,6 +160,43 @@ let fontSize = dynamicFontSize(12);
 const styles = StyleSheet.create({
   container: {
     fontSize: dynamicFontSize(12)
+  }
+});
+```
+
+### 3.2 isIphoneX
+
+判断是否是 iphonex
+
+#### 示例
+
+```javascript
+isIphoneX() ? "..." : "...";
+```
+
+```javascript
+const styles = StyleSheet.create({
+  container: {
+    height: isIphoneX() ? 15 : 20;
+  }
+});
+
+### 3.3 getTitleBarHeight
+
+获取基于当前屏幕的标题栏高度
+
+#### 示例
+
+```
+
+```javascript
+let height = getTitleBarHeight();
+```
+
+```javascript
+const styles = StyleSheet.create({
+  container: {
+    height: getTitleBarHeight();
   }
 });
 ```
