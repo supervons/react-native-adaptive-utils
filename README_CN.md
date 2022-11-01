@@ -217,3 +217,4 @@ const styles = StyleSheet.create({
 # 待评审确定
 
 - [ ] 网络请求
+- [ ] allSettled
