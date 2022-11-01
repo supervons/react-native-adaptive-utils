@@ -209,3 +209,4 @@ const styles = StyleSheet.create({
 # Todo Prepare
 
 - [ ] Network tool.
+- [ ] RN-allSettled
