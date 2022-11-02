@@ -1,6 +1,6 @@
 {
   "name": "react-native-adaptive-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React-Native adaptive utils, contains various adaptation function.\n",
   "main": "index.js",
   "scripts": {
