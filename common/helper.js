@@ -117,3 +117,16 @@ export function computeSomeCharsCount(partStr, fullStr) {
     return false;
   }
 }
+/**
+ * packaging Promise.all() simulate Promise.allSettled()
+ * @type {arr}
+ */
+export function allSettled(promises) {
+  return Promise.all(
+    promises.map(promise =>
+      promise
+        .then(value => ({ state: "fulfilled", ...value }))
+        .catch(reason => ({ state: "rejected", ...reason }))
+    )
+  );
+}

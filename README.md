@@ -90,6 +90,18 @@ let count = computeSomeCharsCount("ad", "adsfdasf");
 
 The count above is the number of occurrences of 'AD' in 'adsfdasf'
 
+### 1.5 allSettled
+
+Encapsulated in the rn Promise.all () simulation Promise.allSettled ()
+
+#### Demo
+
+```javascript
+allSettled(['promiseA','promiseB',...])
+```
+
+Returns an array containing the success or failure returns of all Promises
+
 ## 2 validator
 
 ### 2.1 validPhone
