@@ -90,6 +90,18 @@ let count = computeSomeCharsCount("ad", "adsfdasf");
 
 上述 count 为`ad`在`adsfdasf`中出现的次数
 
+### 1.6 allSettled
+
+在 rn 中的封装 promise.all() 模拟 promise.allSettled()
+
+#### 示例
+
+```javascript
+allSettled(['promiseA','promiseB',...])
+```
+
+返回一个数组，包含所有 promise 的成功或者失败返回值
+
 ## 2 校验工具
 
 ### 2.1 validPhone
