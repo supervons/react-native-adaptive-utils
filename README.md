@@ -217,8 +217,8 @@ const styles = StyleSheet.create({
 - [x] Get image type.
 - [x] Determines the upper limit of input characters in the text box.
 - [x] Generate UUID.
+- [x] RN-allSettled
 
 # Todo Prepare
 
 - [ ] Network tool.
-- [ ] RN-allSettled

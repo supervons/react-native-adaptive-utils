@@ -218,6 +218,7 @@ const styles = StyleSheet.create({
 - [x] 判断图片类型
 - [x] 文本框输入字符上限判断
 - [x] 生成随机数
+- [x] allSettled
 - [ ] 整数、小数金额千分位显示
 - [ ] 统计字符串中的指定字符或串的出现次数
 - [ ] 百分比
@@ -229,4 +230,3 @@ const styles = StyleSheet.create({
 # 待评审确定
 
 - [ ] 网络请求
-- [ ] allSettled
